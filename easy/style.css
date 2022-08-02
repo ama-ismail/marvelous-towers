@@ -1,0 +1,21 @@
+body {
+  background-color: #9DF9EF;
+  text-align: center;
+}
+
+p {
+  border: 2px solid gray;
+  margin: auto;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgb(255,228,196);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: cursive;
+}

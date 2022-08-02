@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="author" content="Amina Ismailova">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Чудесные башни</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+  body {
+    background-color: #9DF9EF;
+    margin: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+.deck {
+  background-image: url('card1/deck.jpg');
+  background-repeat: no-repeat;
+  height: 142px;
+  width: 186px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+.card {
+  height: 142px;
+  width: 186px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+button {
+  margin: 15px;
+}
+
+</style>
+
+</head>
+
+<body>
+  <div class="container">
+    <button type="button" class="btn-success">Начать Игру</button>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-3">
+        <div class="deck"></div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card bg-success show"></div>
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h4>Свойство</h4>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card bg-success property1"></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card bg-success property2"></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card bg-success property3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="avatar/cat.jpg" class="img-circle" alt="token" width="140" height="140">
+        <h4 id="1player">Игрок 1</h4>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <img src="avatar/dog.jpg" class="img-circle" alt="token" width="140" height="140">
+        <h4 id="2player">Игрок 2</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card bg-success 1player1">
+          <img id="1player1" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <div class="card bg-success 2player1">
+          <img id="2player1" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card bg-success 1player2">
+          <img id="1player2" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <div class="card bg-success 2player2">
+          <img id="2player2" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card bg-success 1player3">
+          <img id="1player3" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <div class="card bg-success 2player3">
+          <img id="2player3" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card bg-success 1player4">
+          <img id="1player4" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <div class="card bg-success 2player4">
+          <img id="2player4" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card bg-success 1player5">
+          <img id="1player5" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <div class="card bg-success 2player5">
+          <img id="2player5" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card bg-success 1player6">
+          <img  id="1player6" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <div class="card bg-success 2player6">
+          <img  id="2player6" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card bg-success 1player7">
+          <img id="1player7" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <div class="card bg-success 2player7">
+          <img id="2player7" src="avatar/token.jpg" class="img-circle" alt="token" width="50" height="50">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <button type="button" class="btn"><a href="players.html">Назад</a></button>
+  </div>
+
+  <script src="script/script2.js"></script>
+</body>
+
+</html>
